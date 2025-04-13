@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(95, 191, 159);
+}
+h1,
+p {
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+p {
+  color: rgb(108, 107, 107);
+}
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+.timeline_component {
+  margin: 0 30px 30px 30px;
+  padding: 10px;
+}
+.timeline_data_right {
+  text-align: right;
+}
+.timeline_middle {
+  position: relative;
+  background-color: white;
+}
+.timeline_middle::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-50%);
+}
+.timeline_point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 15px;
+  width: auto;
+  overflow: visible;
+}
